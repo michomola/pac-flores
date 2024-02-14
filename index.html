@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración del documento -->
+    <meta charset="UTF-8"> <!-- Especifica la codificación de caracteres del documento -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la vista en dispositivos móviles -->
+    <title>Invernadero Virtual</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="estilos.css"> <!-- Enlace al archivo CSS externo -->
+</head>
+<body>
+    <!-- Contenido principal del cuerpo del documento -->
+
+    <!-- Selector para el número de plantas -->
+    <div class="selector">
+        <label for="numeroPlantas">Número de plantas:</label>
+        <select id="numeroPlantas" name="numeroPlantas">
+            <option value="seleccionar">Seleccionar</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+        <button id="iniciarBtn">Iniciar</button>
+        <button id="replantarBtn" style="display: none;">Replantar</button>
+    </div>
+    
+    <!-- Encabezado con fondo verde -->
+    <div class="tituloFondoVerde">
+        <h1>Invernadero Virtual</h1>
+    </div>
+
+    <!-- Techo del invernadero -->
+    <div class="techoInvernadero"></div>
+
+    <!-- Contenedor del invernadero donde se agregarán dinámicamente las plantas -->
+    <div id="invernadero" class="contenedorTabla">
+        <!-- Las plantas se agregarán dinámicamente aquí -->
+    </div>
+
+    <!-- Enlace al archivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>

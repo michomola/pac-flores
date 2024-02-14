@@ -1,0 +1,132 @@
+/* Estilo global del cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Altura mínima del 100% del área visible de la página */
+    margin: 0;
+    background-image: url('img/invernadero/invernadero.png');
+    background-size: cover; /* Ajusta el tamaño del fondo para cubrir el área completa */
+    background-position: center bottom; /* Posición del fondo centrada en la parte inferior */
+    background-repeat: no-repeat; /* Evita la repetición del fondo */
+    position: relative;
+}
+
+/* Barra verde en la parte superior */
+.tituloFondoVerde {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 50px;
+    background-color: green;
+    z-index: 1; /* Coloca la barra verde encima de otros elementos */
+}
+
+/* Estilo para títulos */
+h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-left: 130px; /* Margen izquierdo */
+}
+
+/* Selector de cantidad de plantas */
+.selector {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    z-index: 2; /* Coloca el selector encima de la barra verde */
+}
+
+/* Techo del invernadero */
+.techoInvernadero {
+    position: absolute;
+    top: 100px; /* Posición desde la parte superior */
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+}
+
+/* Estilos generales para divs */
+div {
+    margin-bottom: 20px;
+}
+
+/* Estilos para selects en general */
+select {
+    margin-bottom: 10px;
+}
+
+/* Contenedor de la tabla */
+.contenedorTabla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin-top: 300px; /* Margen superior */
+}
+
+/* Estilos para las imágenes dentro del contenedor de la tabla */
+.contenedorTabla img {
+    margin-right: 20px;
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Estilos para la tabla de resultados */
+#tablaResultados {
+    width: 100%;
+    margin-top: 10px; /* Margen superior */
+}
+
+/* Estilos para las celdas de la tabla de resultados */
+#tablaResultados td {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}
+
+/* Estilos generales para imágenes */
+img {
+    width: 100px;
+    height: auto;
+}
+
+/* Estilo para ocultar botones */
+button {
+    display: none;
+}
+
+/* Estilos para las macetas */
+.maceta {
+    width: 100px; /* Ajusta según sea necesario */
+    height: auto;
+    object-fit: contain;
+    position: absolute;
+    top: 65px; /* Ajusta según sea necesario */
+    left: 50%;
+    transform: translateX(-60%);
+}
+
+/* Contenedor de la planta */
+.planta-container {
+    position: relative;
+}
+
+.tallo {
+    width: 10px; /* Ajusta el ancho del tallo según sea necesario */
+    height: 0; /* Comienza con altura cero */
+    background-color: green; /* o el color que desees para el tallo */
+    position: absolute;
+    bottom: -15px; /* Posición inicial del tallo en la parte inferior */
+    left: 50%; /* Ajusta según sea necesario */
+    transform: translateX(-160%);
+    transform-origin: bottom;
+}
+
+
